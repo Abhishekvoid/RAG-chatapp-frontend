@@ -11,8 +11,8 @@ export default function Home() {
   const socketRef = useRef(null);
 
   useEffect(()=>{
-
-    const socket = new WebSocket("ws://localhost:8000/ws/chat/testroom/");
+    
+    const socket = new WebSocket("wss://rag-chatapp-backend.onrender.com/ws/room/some-room/");
     socketRef.current = socket
 
 

@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(()=>{
     
-    const socket = new WebSocket("wss://rag-chatapp-backend.onrender.com/ws/room/some-room/");
+    const socket = new WebSocket(`ws://192.168.0.56:8000/ws/room/romnmae/`);
     socketRef.current = socket
 
 
